@@ -1,0 +1,7 @@
+conda create -y -n opensim-rl -c kidzik -c conda-forge opensim python=3.6.1
+conda activate opensim-rl
+conda install -y -c conda-forge lapack git
+conda install cudatoolkit=10.2
+conda install cuDNN=7.6.5
+conda activate opensim-rl
+python run.py
